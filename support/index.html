@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Поддержка · Рассвет</title>
+  <meta name="description" content="Поддержка приложения «Рассвет»: как сообщить об ошибке в тексте молитвы, календаре или справочнике приходов.">
+  <style>
+  :root {
+    --background: #FAF5EB;
+    --card: #FFFFFF;
+    --primary: #7B2D26;
+    --text: #2B2118;
+    --text-muted: #8A7B6B;
+    --border: #E8DFD0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #191412;
+      --card: #241D19;
+      --primary: #D9956B;
+      --text: #EFE6D8;
+      --text-muted: #A4937F;
+      --border: #3A322B;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 24px 16px 56px;
+    background: var(--background);
+    color: var(--text);
+    font: 16px/1.6 Georgia, 'PT Serif', 'Times New Roman', serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  header { margin-bottom: 24px; }
+  h1 { font-size: 1.6rem; line-height: 1.3; margin: 0 0 12px; color: var(--text); }
+  h2 { font-size: 1.15rem; line-height: 1.35; margin: 0 0 10px; color: var(--text); }
+  p { margin: 0 0 12px; color: var(--text-muted); }
+  p:last-child { margin-bottom: 0; }
+  .lead { color: var(--text-muted); font-size: 1.05rem; }
+  section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+  a { color: var(--primary); }
+  nav { margin: 20px 0 0; }
+  nav a { display: inline-block; margin-right: 18px; }
+  footer {
+    margin-top: 28px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Поддержка «Рассвета»</h1>
+      <p class="lead">Отвечает автор приложения — не служба поддержки и не робот. Пишите на любом из языков, на которых говорит Церковь; ответ придёт по-русски.</p>
+    </header>
+    <section>
+      <h2>Ошибка в тексте молитвы или в календаре</h2>
+      <p>Это самое важное письмо, которое можно нам прислать. Опечатка в молитвослове, неверный глас, разошедшийся с богослужебными указаниями пост или память святого — сообщите, и мы поправим.</p>
+      <p>Чтобы разобраться быстрее, укажите экран, дату (для календаря) и название молитвы. Снимок экрана помогает больше любого описания.</p>
+    </section>
+    <section>
+      <h2>Приход в справочнике</h2>
+      <p>Справочник собран из открытых источников (OpenStreetMap, Wikidata, GeoNames), и в нём есть неточности: закрытый храм, старый адрес, отсутствующий приход. Напишите, что именно поправить, — исправление войдёт в следующее обновление.</p>
+      <p>Пилотный охват — Москва и Московская область. Другие регионы добавляются постепенно; заявка на свой регион ускоряет очередь.</p>
+    </section>
+    <section>
+      <h2>Приложение не работает как ожидалось</h2>
+      <p>Опишите, что вы делали и что произошло, и назовите модель телефона и версию системы. Автоматических отчётов об ошибках приложение не отправляет — мы узнаём о сбоях только от вас.</p>
+      <p>Если пропали уведомления, проверьте сначала разрешения приложения в настройках системы: без них напоминания ставить некому.</p>
+    </section>
+    <section>
+      <h2>Ваши записи мы восстановить не можем</h2>
+      <p>Помянник и заметки к исповеди хранятся только на вашем телефоне, сервера у «Рассвета» нет. Если данные пропали вместе с устройством или после удаления приложения, у нас нет копии — восстанавливать неоткуда.</p>
+      <p>Это обратная сторона обещания не собирать данные. Подробности — на странице приватности.</p>
+    </section>
+    <section>
+      <h2>Чего мы делать не будем</h2>
+      <p>В «Рассвете» не будет рекламы, слежки, платы за тексты молитв, серий и достижений, а также ответов от искусственного интеллекта «от лица Писания». Вопросы веры стоит задавать живому священнику — приложение к этому только приводит.</p>
+      <p>Предложения новых разделов мы читаем и рады им, но взвешиваем их по этим правилам.</p>
+    </section>
+    <p>Спаси вас Господь за всякое замечание — они делают приложение точнее.</p>
+    <nav>
+      <a href="../privacy/">Приватность</a>
+      <a href="../support/">Поддержка</a>
+    </nav>
+    <footer><strong>Адрес поддержки ещё не задан.</strong> Перед публикацией подставьте его в <code>src/data/support.ts</code>.</footer>
+  </main>
+</body>
+</html>
